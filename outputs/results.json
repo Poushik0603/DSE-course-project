@@ -1,0 +1,702 @@
+{
+  "versions": {
+    "python-pandas": "2.1.4",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.0",
+    "seaborn": "0.12.2",
+    "scipy": "1.11.4",
+    "statsmodels": "0.14.0",
+    "scikit-learn": "1.2.2"
+  },
+  "dataset": {
+    "n_incidents": 1711,
+    "n_reports": 7840,
+    "first_year": 1983,
+    "last_year": 2026,
+    "mit_labelled": 1496,
+    "intent_labelled": 1475,
+    "intent_unlabelled": 215,
+    "intent_unlabelled_2026": 141,
+    "intent_other": 21,
+    "cset_labelled": 207,
+    "gmf_labelled": 41,
+    "post_deployment_pct": 97.6
+  },
+  "report_count_desc": {
+    "count": 1711.0,
+    "mean": 3.94,
+    "std": 6.09,
+    "min": 0.0,
+    "25%": 1.0,
+    "50%": 2.0,
+    "75%": 4.0,
+    "max": 58.0
+  },
+  "act1_desc": {
+    "window": "2010-2025",
+    "mean": 90.9,
+    "median": 45.5,
+    "std": 125.0,
+    "min": 1,
+    "max": 453,
+    "skew": 1.92,
+    "count_2015": 24,
+    "count_2020": 91,
+    "count_2022": 108,
+    "count_2023": 179,
+    "count_2024": 306,
+    "count_2025": 453,
+    "count_2026_partial": 241,
+    "yoy_2023": 65.7,
+    "yoy_2024": 70.9,
+    "yoy_2025": 48.0
+  },
+  "act1_trend": {
+    "linear_slope": 21.07,
+    "linear_intercept": -42425.0,
+    "linear_r2": 0.645,
+    "linear_p": 0.000181,
+    "exp_b0": 0.981,
+    "exp_b1": 0.3407,
+    "exp_b1_se": 0.0238,
+    "exp_b1_p": 9.63e-10,
+    "exp_b1_ci": [
+      0.2895,
+      0.3918
+    ],
+    "exp_r2_log": 0.936,
+    "exp_r2_original": 0.97,
+    "exp_F": 204.3,
+    "annual_growth_pct": 40.6,
+    "doubling_years": 2.03,
+    "growth_2012_2021_pct": 33.9,
+    "doubling_2012_2021": 2.38,
+    "growth_2021_2025_pct": 57.0,
+    "doubling_2021_2025": 1.54,
+    "pred_2026_exp": 621.0,
+    "annualised_2026": 316.0
+  },
+  "act1_periods": {
+    "1983–2017 (35 years)": {
+      "n": 162,
+      "pct": 9.5
+    },
+    "2018–2022 (5 years)": {
+      "n": 370,
+      "pct": 21.6
+    },
+    "2023–2026* (3.8 years)": {
+      "n": 1179,
+      "pct": 68.9
+    }
+  },
+  "act2_share": {
+    "n": 1475,
+    "pct_intentional_by_era": {
+      "≤2017": 24.1,
+      "2018–20": 26.1,
+      "2021–22": 31.7,
+      "2023": 53.0,
+      "2024": 64.0,
+      "2025": 65.4,
+      "2026*": 56.2
+    },
+    "n_by_era": {
+      "≤2017": 158,
+      "2018–20": 176,
+      "2021–22": 183,
+      "2023": 168,
+      "2024": 289,
+      "2025": 405,
+      "2026*": 96
+    },
+    "change_pp": 41.3,
+    "ratio": 2.71,
+    "share_by_year": {
+      "2015": 20.8,
+      "2016": 22.5,
+      "2017": 24.5,
+      "2018": 22.2,
+      "2019": 30.2,
+      "2020": 26.1,
+      "2021": 23.1,
+      "2022": 38.1,
+      "2023": 53.0,
+      "2024": 64.0,
+      "2025": 65.4
+    },
+    "slope_pp_per_year": 4.54,
+    "intercept": -9129.8,
+    "r": 0.873,
+    "r2": 0.762,
+    "p": 0.000453,
+    "cross50_year": 2023.2
+  },
+  "act2_logit": {
+    "b0": -0.539,
+    "b1": 0.2045,
+    "b1_se": 0.0196,
+    "b1_p": 2.19e-25,
+    "odds_ratio": 1.227,
+    "or_ci": [
+      1.181,
+      1.275
+    ],
+    "pseudo_r2": 0.068,
+    "llr_p": 3.75e-32,
+    "crossover_year": 2022.6,
+    "predicted_pct_intentional": {
+      "2012": 10.2,
+      "2015": 17.3,
+      "2018": 27.9,
+      "2020": 36.9,
+      "2022": 46.8,
+      "2023": 51.9,
+      "2024": 56.9,
+      "2025": 61.9
+    },
+    "n": 1475
+  },
+  "act2_entity": {
+    "human_pct_2015": 8.3,
+    "human_pct_2025": 53.1,
+    "crossover_year": 2025,
+    "intent_x_entity": {
+      "AI": {
+        "Intentional": 271,
+        "Unintentional": 681
+      },
+      "Human": {
+        "Intentional": 463,
+        "Unintentional": 58
+      }
+    },
+    "human_caused_intentional_pct": 88.9,
+    "ai_caused_unintentional_pct": 71.5
+  },
+  "act3": {
+    "crossover_year": 2023,
+    "failures_2025": 37,
+    "misuse_2025": 237,
+    "failures_2014": 7,
+    "misuse_2014": 1,
+    "ratio_2025": 6.4,
+    "slope_failures": 2.51,
+    "p_failures": 0.000185,
+    "r2_failures": 0.768,
+    "slope_misuse": 15.79,
+    "p_misuse": 0.00476,
+    "r2_misuse": 0.566,
+    "total_failures": 313,
+    "total_misuse": 566
+  },
+  "act4": {
+    "n_before": 525,
+    "n_after": 971,
+    "table": {
+      "Malicious actors & misuse": {
+        "Before 2023 (n)": 60,
+        "2023 onwards (n)": 506,
+        "Before 2023 %": 11.4,
+        "2023 onwards %": 52.1,
+        "change (pp)": 40.7
+      },
+      "Misinformation": {
+        "Before 2023 (n)": 26,
+        "2023 onwards (n)": 170,
+        "Before 2023 %": 5.0,
+        "2023 onwards %": 17.5,
+        "change (pp)": 12.5
+      },
+      "AI failures & limitations": {
+        "Before 2023 (n)": 204,
+        "2023 onwards (n)": 109,
+        "Before 2023 %": 38.9,
+        "2023 onwards %": 11.2,
+        "change (pp)": -27.7
+      },
+      "Discrimination & toxicity": {
+        "Before 2023 (n)": 159,
+        "2023 onwards (n)": 84,
+        "Before 2023 %": 30.3,
+        "2023 onwards %": 8.7,
+        "change (pp)": -21.6
+      },
+      "Privacy & security": {
+        "Before 2023 (n)": 48,
+        "2023 onwards (n)": 64,
+        "Before 2023 %": 9.1,
+        "2023 onwards %": 6.6,
+        "change (pp)": -2.5
+      },
+      "Human–computer interaction": {
+        "Before 2023 (n)": 14,
+        "2023 onwards (n)": 28,
+        "Before 2023 %": 2.7,
+        "2023 onwards %": 2.9,
+        "change (pp)": 0.2
+      },
+      "Socio-economic & environment": {
+        "Before 2023 (n)": 14,
+        "2023 onwards (n)": 10,
+        "Before 2023 %": 2.7,
+        "2023 onwards %": 1.0,
+        "change (pp)": -1.7
+      }
+    }
+  },
+  "act4_subdomains": {
+    "Fraud, scams, and targeted manipulation": {
+      "2023 onwards": 38.8,
+      "Before 2023": 6.9,
+      "change (pp)": 31.9
+    },
+    "False or misleading information": {
+      "2023 onwards": 17.4,
+      "Before 2023": 4.4,
+      "change (pp)": 13.0
+    },
+    "Disinformation, surveillance, and influence at scale": {
+      "2023 onwards": 12.1,
+      "Before 2023": 4.0,
+      "change (pp)": 8.1
+    },
+    "Lack of capability or robustness": {
+      "2023 onwards": 11.2,
+      "Before 2023": 37.3,
+      "change (pp)": -26.1
+    },
+    "Exposure to toxic content": {
+      "2023 onwards": 5.6,
+      "Before 2023": 7.0,
+      "change (pp)": -1.4
+    },
+    "Compromise of privacy by obtaining, leaking or correctly inferring sensitive information": {
+      "2023 onwards": 4.7,
+      "Before 2023": 8.0,
+      "change (pp)": -3.3
+    }
+  },
+  "act5_k": {
+    "tfidf_shape": [
+      1711,
+      2877
+    ],
+    "table": {
+      "2": {
+        "inertia": 1666.7,
+        "silhouette": 0.0137
+      },
+      "3": {
+        "inertia": 1656.4,
+        "silhouette": 0.0174
+      },
+      "4": {
+        "inertia": 1645.4,
+        "silhouette": 0.0204
+      },
+      "5": {
+        "inertia": 1641.6,
+        "silhouette": 0.0149
+      },
+      "6": {
+        "inertia": 1632.0,
+        "silhouette": 0.0195
+      },
+      "7": {
+        "inertia": 1626.3,
+        "silhouette": 0.0206
+      },
+      "8": {
+        "inertia": 1621.2,
+        "silhouette": 0.0223
+      },
+      "9": {
+        "inertia": 1615.6,
+        "silhouette": 0.0232
+      },
+      "10": {
+        "inertia": 1609.7,
+        "silhouette": 0.0262
+      },
+      "11": {
+        "inertia": 1604.5,
+        "silhouette": 0.0238
+      },
+      "12": {
+        "inertia": 1600.9,
+        "silhouette": 0.026
+      }
+    }
+  },
+  "act5_clusters": {
+    "k": 7,
+    "purity": 0.543,
+    "random_purity": 0.378,
+    "ari": 0.151,
+    "nmi": 0.276,
+    "profile": {
+      "Chatbots & LLM errors": {
+        "size": 496,
+        "pct_intentional": 34.0,
+        "top_domain": "Misinformation",
+        "median_year": 2025.0,
+        "top_terms": "chatgpt, data, openai, chatbot, generated, google"
+      },
+      "Algorithms, robots & moderation": {
+        "size": 409,
+        "pct_intentional": 16.0,
+        "top_domain": "AI failures & limitations",
+        "median_year": 2020.0,
+        "top_terms": "algorithm, automated, facebook, robot, content, amazon"
+      },
+      "Political deepfakes & fake media": {
+        "size": 253,
+        "pct_intentional": 91.0,
+        "top_domain": "Malicious actors & misuse",
+        "median_year": 2025.0,
+        "top_terms": "generated, video, media, deepfake, purportedly, purported"
+      },
+      "Deepfake scams & fraud": {
+        "size": 222,
+        "pct_intentional": 99.0,
+        "top_domain": "Malicious actors & misuse",
+        "median_year": 2025.0,
+        "top_terms": "deepfake, scam, video, investment, generated, purported"
+      },
+      "Sexual deepfake images (schools)": {
+        "size": 191,
+        "pct_intentional": 71.0,
+        "top_domain": "Malicious actors & misuse",
+        "median_year": 2024.0,
+        "top_terms": "images, school, students, generated, student, deepfake"
+      },
+      "Self-driving & Autopilot crashes": {
+        "size": 71,
+        "pct_intentional": 6.0,
+        "top_domain": "AI failures & limitations",
+        "median_year": 2021.0,
+        "top_terms": "tesla, autopilot, driving, driver, self driving, tesla model"
+      },
+      "Facial recognition & policing": {
+        "size": 69,
+        "pct_intentional": 47.0,
+        "top_domain": "Discrimination & toxicity",
+        "median_year": 2021.0,
+        "top_terms": "facial recognition, facial, recognition, police, arrest, technology"
+      }
+    },
+    "weapon_clusters": [
+      "Political deepfakes & fake media",
+      "Deepfake scams & fraud",
+      "Sexual deepfake images (schools)"
+    ],
+    "weapon_cluster_share_by_era": {
+      "≤2017": 3.7,
+      "2018–20": 14.3,
+      "2021–22": 13.3,
+      "2023": 43.0,
+      "2024": 52.3,
+      "2025": 57.4,
+      "2026*": 46.5
+    }
+  },
+  "act6_clf": {
+    "n_train": 1180,
+    "n_test": 295,
+    "accuracy": 0.803,
+    "baseline": 0.502,
+    "precision": {
+      "unintentional": 0.781,
+      "intentional": 0.83
+    },
+    "recall": {
+      "unintentional": 0.845,
+      "intentional": 0.762
+    },
+    "f1": {
+      "unintentional": 0.812,
+      "intentional": 0.794
+    },
+    "confusion": [
+      [
+        125,
+        23
+      ],
+      [
+        35,
+        112
+      ]
+    ]
+  },
+  "act6_words": {
+    "intentional": {
+      "deepfake": 5.33,
+      "generated": 4.4,
+      "voice": 3.61,
+      "video": 2.76,
+      "purported": 2.63,
+      "fake": 2.63,
+      "consent": 2.51,
+      "targeted": 2.33
+    },
+    "unintentional": {
+      "failed": -2.81,
+      "facebook": -2.69,
+      "tool": -2.56,
+      "robot": -2.42,
+      "error": -2.22,
+      "google": -2.14,
+      "automated": -2.13,
+      "misidentified": -2.05
+    }
+  },
+  "act6_robust": {
+    "n_imputed": 215,
+    "pred_intentional_pct": 44.7,
+    "table": {
+      "≤2017": {
+        "labelled only %": 24.1,
+        "labelled + imputed %": 24.1,
+        "imputed rows": 0
+      },
+      "2018–20": {
+        "labelled only %": 26.1,
+        "labelled + imputed %": 25.7,
+        "imputed rows": 3
+      },
+      "2021–22": {
+        "labelled only %": 31.7,
+        "labelled + imputed %": 31.6,
+        "imputed rows": 4
+      },
+      "2023": {
+        "labelled only %": 53.0,
+        "labelled + imputed %": 51.1,
+        "imputed rows": 10
+      },
+      "2024": {
+        "labelled only %": 64.0,
+        "labelled + imputed %": 63.0,
+        "imputed rows": 14
+      },
+      "2025": {
+        "labelled only %": 65.4,
+        "labelled + imputed %": 63.2,
+        "imputed rows": 43
+      },
+      "2026*": {
+        "labelled only %": 56.2,
+        "labelled + imputed %": 51.9,
+        "imputed rows": 141
+      }
+    }
+  },
+  "act7_entities": {
+    "top_developers": {
+      "Deepfake Technology Developers": {
+        "Intentional": 366,
+        "Unintentional": 9,
+        "Unlabelled/Other": 62,
+        "total": 437
+      },
+      "Synthetic Audio Generation Technology Developers": {
+        "Intentional": 208,
+        "Unintentional": 1,
+        "Unlabelled/Other": 22,
+        "total": 231
+      },
+      "Openai": {
+        "Intentional": 57,
+        "Unintentional": 96,
+        "Unlabelled/Other": 31,
+        "total": 184
+      },
+      "Large Language Model Developers": {
+        "Intentional": 10,
+        "Unintentional": 39,
+        "Unlabelled/Other": 67,
+        "total": 116
+      },
+      "Synthetic Image Generation Technology Developers": {
+        "Intentional": 65,
+        "Unintentional": 8,
+        "Unlabelled/Other": 42,
+        "total": 115
+      },
+      "Synthetic Media Generation Technology Developers": {
+        "Intentional": 44,
+        "Unintentional": 2,
+        "Unlabelled/Other": 68,
+        "total": 114
+      },
+      "Google": {
+        "Intentional": 14,
+        "Unintentional": 72,
+        "Unlabelled/Other": 10,
+        "total": 96
+      },
+      "Generative Ai Developers": {
+        "Intentional": 48,
+        "Unintentional": 12,
+        "Unlabelled/Other": 6,
+        "total": 66
+      },
+      "Chatbot Developers": {
+        "Intentional": 6,
+        "Unintentional": 20,
+        "Unlabelled/Other": 33,
+        "total": 59
+      },
+      "Meta": {
+        "Intentional": 10,
+        "Unintentional": 44,
+        "Unlabelled/Other": 4,
+        "total": 58
+      }
+    },
+    "top_deployers": {
+      "Scammers": 232,
+      "Deepfake Creators": 113,
+      "Synthetic Media Creators": 81,
+      "Openai": 80,
+      "Information Manipulation Actors": 66,
+      "Google": 63,
+      "Meta": 52,
+      "Facebook": 51,
+      "Tesla": 43,
+      "Law Enforcement": 37
+    },
+    "top_harmed": {
+      "Epistemic Integrity": 414,
+      "General Public": 346,
+      "Privacy": 171,
+      "Educational Communities": 101,
+      "Democratic Integrity": 95,
+      "Students": 92,
+      "Minors": 92,
+      "Women And Girls": 87,
+      "Women": 72,
+      "National Security And Intelligence Stakeholders": 70
+    }
+  },
+  "act7_media": {
+    "all": {
+      "Intentional": {
+        "count": 735,
+        "median": 2.0,
+        "mean": 3.82
+      },
+      "Unintentional": {
+        "count": 740,
+        "median": 2.0,
+        "mean": 4.37
+      }
+    },
+    "since_2023": {
+      "Intentional": {
+        "count": 593,
+        "median": 2.0,
+        "mean": 3.46
+      },
+      "Unintentional": {
+        "count": 365,
+        "median": 2.0,
+        "mean": 3.38
+      }
+    },
+    "pearson_year_reports": -0.217
+  },
+  "act7_cset": {
+    "n": 207,
+    "median_year": 2019.0,
+    "lives_lost_total": 541,
+    "incidents_with_deaths": 12,
+    "injuries_total": 56931,
+    "injuries_outlier": {
+      "title": "Amazon’s Robotic Fulfillment Centers Have Higher Serious Injury Rates",
+      "injuries": 55000
+    },
+    "injuries_excl_outlier": 1931,
+    "incidents_with_injuries": 15,
+    "deadly_intent": {
+      "Unintentional": 12
+    },
+    "top_sectors": {
+      "Information and communication": 81,
+      "Arts, entertainment and recreation": 35,
+      "Transportation and storage": 28,
+      "Wholesale and retail trade": 20,
+      "Law enforcement": 16,
+      "Human health and social work activities": 15
+    },
+    "regions": {
+      "North America": 95,
+      "Global": 57,
+      "Europe": 26,
+      "Asia": 14,
+      "Oceania": 5,
+      "Africa": 2,
+      "South America": 1
+    },
+    "deadliest": [
+      {
+        "year": 2018,
+        "title": "Crashes with Maneuvering Characteristics Augmentation System (MCAS)",
+        "Lives Lost": 189.0,
+        "Intent": "Unintentional",
+        "Risk Domain": "AI system safety, failures, and limitations"
+      },
+      {
+        "year": 2015,
+        "title": "Collection of Robotic Surgery Malfunctions",
+        "Lives Lost": 144.0,
+        "Intent": "Unintentional",
+        "Risk Domain": "AI system safety, failures, and limitations"
+      },
+      {
+        "year": 2015,
+        "title": "YouTube Recommendations Allegedly Promoted Radicalizing Material Contributing to Terrorist Acts",
+        "Lives Lost": 130.0,
+        "Intent": "Unintentional",
+        "Risk Domain": "Malicious Actors & Misuse"
+      },
+      {
+        "year": 2019,
+        "title": "The Christchurch shooter and YouTube’s radicalization trap",
+        "Lives Lost": 51.0,
+        "Intent": "Unintentional",
+        "Risk Domain": "Discrimination and Toxicity"
+      },
+      {
+        "year": 2022,
+        "title": "Amazon Reportedly Sold Products and Recommended Frequently Bought Together Items That Aid Suicide Attempts",
+        "Lives Lost": 18.0,
+        "Intent": "Unintentional",
+        "Risk Domain": "Human-Computer Interaction"
+      }
+    ]
+  },
+  "act7_reports": {
+    "placeholder_dates_removed": 751,
+    "articles_per_year": {
+      "2013": 33,
+      "2014": 22,
+      "2015": 125,
+      "2016": 251,
+      "2017": 413,
+      "2018": 427,
+      "2019": 126,
+      "2020": 231,
+      "2021": 316,
+      "2022": 446,
+      "2023": 1033,
+      "2024": 1127,
+      "2025": 1505,
+      "2026": 969
+    },
+    "english_pct": 96.1,
+    "n_languages": 37,
+    "is_incident_report_pct": 84.0
+  }
+}

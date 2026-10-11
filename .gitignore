@@ -1,0 +1,9 @@
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+
+# Office lock files
+~$*
+
+# Not for sharing
+doc/Puducherry Technological University Mail - Course Project.pdf

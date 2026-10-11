@@ -1,0 +1,19 @@
+,non_missing,fill_%
+date,1711,100.0
+year,1711,100.0
+title,1711,100.0
+description,1711,100.0
+deployer,1708,99.8
+developer,1710,99.9
+harmed,1709,99.9
+report_count,1711,100.0
+Risk Domain,1496,87.4
+Risk Subdomain,1495,87.4
+Responsible Entity,1496,87.4
+Intent,1496,87.4
+Timing,1496,87.4
+Lives Lost,206,12.0
+Sector of Deployment,206,12.0
+Location Region,200,11.7
+AI Goal,41,2.4
+Technical Failure,26,1.5

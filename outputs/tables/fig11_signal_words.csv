@@ -1,0 +1,9 @@
+,intentional_word,weight_+,unintentional_word,weight_-
+0,deepfake,5.33,failed,-2.81
+1,generated,4.4,facebook,-2.69
+2,voice,3.61,tool,-2.56
+3,video,2.76,robot,-2.42
+4,purported,2.63,error,-2.22
+5,fake,2.63,google,-2.14
+6,consent,2.51,automated,-2.13
+7,targeted,2.33,misidentified,-2.05

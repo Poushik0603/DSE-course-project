@@ -1,0 +1,8 @@
+cluster_name,size,pct_intentional,top_domain,median_year,top_terms
+Chatbots & LLM errors,496,34.0,Misinformation,2025.0,"chatgpt, data, openai, chatbot, generated, google"
+"Algorithms, robots & moderation",409,16.0,AI failures & limitations,2020.0,"algorithm, automated, facebook, robot, content, amazon"
+Political deepfakes & fake media,253,91.0,Malicious actors & misuse,2025.0,"generated, video, media, deepfake, purportedly, purported"
+Deepfake scams & fraud,222,99.0,Malicious actors & misuse,2025.0,"deepfake, scam, video, investment, generated, purported"
+Sexual deepfake images (schools),191,71.0,Malicious actors & misuse,2024.0,"images, school, students, generated, student, deepfake"
+Self-driving & Autopilot crashes,71,6.0,AI failures & limitations,2021.0,"tesla, autopilot, driving, driver, self driving, tesla model"
+Facial recognition & policing,69,47.0,Discrimination & toxicity,2021.0,"facial recognition, facial, recognition, police, arrest, technology"
